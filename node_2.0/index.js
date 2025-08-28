@@ -3,9 +3,11 @@ const http = require("http");
 const fs = require("fs");
 const url = require("url");
 
-const server = http.createServer((req, res) => {
+function myHandler(req, res) {
   if (req.url === "/favicon.ico") return res.end();
-  const setLog = `${Date.now()}, Method : ${req.method}, ${req.url},  New Request Received \n`;
+  const setLog = `${Date.now()}, Method : ${req.method}, ${
+    req.url
+  },  New Request Received \n`;
   const myUrl = url.parse(req.url, true);
   console.log("MyURl", myUrl);
   fs.appendFile("log.txt", setLog, (error, result) => {
@@ -21,7 +23,7 @@ const server = http.createServer((req, res) => {
           break;
         case "/search":
           const search = myUrl.query.search_query;
-          res.end(`Here are your results for ${search}` );
+          res.end(`Here are your results for ${search}`);
           break;
         default:
           res.end("404 NOT FOUND");
@@ -30,6 +32,7 @@ const server = http.createServer((req, res) => {
       console.log(error);
     }
   });
-});
+}
+const server = http.createServer(myHandler);
 
 server.listen(8000, () => console.log("Server Working..."));
