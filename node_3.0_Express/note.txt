@@ -1,0 +1,19 @@
+//version : ^4.18.5
+
+// 3rd part (last part) - Minor Fixes (Optional)
+Latest -> 4.18.6
+
+// 2nd part - Recommended Bug Fix (Security fix)
+Latest -> 4.19.0
+
+// 1st part - Major release - Major / Breaking Update
+//latest -> 5.1.0
+
+
+// ^ - Install all Recommended and Minor fixes automatically
+
+// ================================{ REST API }=============================================//
+
+// REST / RESTFULL - API
+// Always Respect All Method
+//GET, POST, PUT, PATCH, DELETE

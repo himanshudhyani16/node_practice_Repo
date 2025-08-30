@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "first_name": "piya",
+    "last_name": "Wanne",
+    "email": "pwanne0@nbcnews.com",
+    "gender": "Female",
+    "job_title": "Electrical Engineer"
+  },
+  {
+    "id": 2,
+    "first_name": "ekansh",
+    "last_name": "Antwis",
+    "email": "eantwis1@cam.ac.uk",
+    "gender": "Male",
+    "job_title": "Programmer I"
+  },
+  {
+    "id": 4,
+    "first_name": "nickkkkk",
+    "last_name": "Corfield",
+    "email": "ncorfield3@virginia.edu",
+    "gender": "Genderfluid",
+    "job_title": "Financial Analyst"
+  },
+  {
+    "id": 5,
+    "first_name": "Averill",
+    "last_name": "Seifenmacher",
+    "email": "aseifenmacher4@diigo.com",
+    "gender": "Male",
+    "job_title": "Environmental Tech"
+  },
+  {
+    "id": 6,
+    "first_name": "Kenny",
+    "last_name": "Dollman",
+    "email": "kdollman5@umn.edu",
+    "gender": "Male",
+    "job_title": "Analyst Programmer"
+  },
+  {
+    "id": 7,
+    "first_name": "Valentijn",
+    "last_name": "McSperrin",
+    "email": "vmcsperrin6@loc.gov",
+    "gender": "Male",
+    "job_title": "Paralegal"
+  },
+  {
+    "id": 8,
+    "first_name": "Krisha",
+    "last_name": "Stutard",
+    "email": "kstutard7@wired.com",
+    "gender": "Male",
+    "job_title": "Environmental Tech"
+  },
+  {
+    "id": 9,
+    "first_name": "Artus",
+    "last_name": "Remington",
+    "email": "aremington8@rambler.ru",
+    "gender": "Male",
+    "job_title": "Automation Specialist II"
+  },
+  {
+    "id": 10,
+    "first_name": "Garner",
+    "last_name": "Winfield",
+    "email": "gwinfield9@rakuten.co.jp",
+    "gender": "Male",
+    "job_title": "Safety Technician IV"
+  },
+  {
+    "first_name": "jhon",
+    "last_name": "doe",
+    "email": "jhon@example.com",
+    "gender": "male",
+    "job_title": "designer",
+    "id": 11
+  },
+  {
+    "first_name": "jaya",
+    "last_name": "tea",
+    "email": "tina@example.com",
+    "gender": "female",
+    "job_title": "designer",
+    "id": 12
+  }
+]
