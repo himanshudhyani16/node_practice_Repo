@@ -16,7 +16,13 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
   // console.log("md2 :", req.userName);
-  next();
+  fs.appendFile(
+    "log.txt",
+    `${Date.now()}, METHOD : ${req.method}, PATH : ${req.path} \n`,
+    (error, result) => {
+      next();
+    }
+  );
 });
 
 //routes
@@ -29,6 +35,9 @@ app.get("/users", (req, res) => {
 });
 // REST API
 app.get("/api/users", (req, res) => {
+  // console.log(req.headers);
+  res.setHeader("X-MyName", "Himanshu");
+  // Always add X to custom Header
   // console.log("get app :", req.userName);
   return res.json(users);
 });
