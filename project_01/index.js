@@ -4,8 +4,20 @@ const fs = require("fs");
 
 const app = express();
 const PORT = 8001;
-
+// Middleware
 app.use(express.urlencoded({ extended: false }));
+
+app.use((req, res, next) => {
+  req.userName = "doremon";
+  // console.log("Middleware 1");
+  // res.json({ msg: "hello middle ware one" });
+  next();
+});
+
+app.use((req, res, next) => {
+  // console.log("md2 :", req.userName);
+  next();
+});
 
 //routes
 app.get("/users", (req, res) => {
@@ -17,6 +29,7 @@ app.get("/users", (req, res) => {
 });
 // REST API
 app.get("/api/users", (req, res) => {
+  // console.log("get app :", req.userName);
   return res.json(users);
 });
 
